@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.7.2/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body>
+    <header class="mx-4 my-3">
+        <div class="flex justify-between">
+            <h2 class="text-2xl font-bold">Hot Gadgets</h2>
+            <button class="btn btn-primary text-white">Sign up</button>
+        </div>
+        <h1 class="text-6xl text-center font-bold">Apple Iphone 13 Pro Max</h1>
+        <p class="text-center lg:w-[50%] lg:ml-[300px] pt-5">There are many variations of passages of Lorem Ipsum available,  but the majority have suffered alteration in some form, by injected humou.</p>
+        <button class="btn btn-primary text-white relative lg:left-[520px] left-[110px] mt-8">Buy Now</button>
+        <img src="Group 48095420.jpg" alt="" class="ml-[100px] hidden md:block lg:block ">
+        <img src="pngwing 3.jpg" alt="" class="block lg:hidden md:hidden">
+    </header><br><br>
+    <main>
+        <section class="mx-4">
+            <div class="ml-[360px]">
+                <input type="text" id="inputText" placeholder="Type here" class="input input-bordered input-info w-full max-w-xs" />
+                <button onclick="searchPhone()" class="btn btn-info text-xl font-bold text-white">Search</button>
+            </div> 
+            <br><br>
+            <div class="ml-[520px]">
+                <span id="loading" class="loading loading-infinity loading-lg hidden"></span>
+            </div>
+            <br><br>
+            <div id="phon-container" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5 ml-[20px] lg:ml-[40px]">
+
+            </div>
+            <br><br>
+            <div>
+                <!-- Open the modal using ID.showModal() method -->
+                <dialog id="my_modal_5" class="modal modal-bottom sm:modal-middle">
+                <div class="modal-box">
+                    <div id="createModal">
+                        
+                    </div>
+                    <div class="modal-action">
+                    <form method="dialog">
+                        <!-- if there is a button in form, it will close the modal -->
+                        <button class="btn">Close</button>
+                    </form>
+                    </div>
+                </div>
+                </dialog>
+            </div>
+            <div>
+                <button onclick="AllPhoneShow()" id="showAll" class="btn btn-info text-white relative lg:left-[520px] left-[110px] mt-8 hidden">Show All</button>
+            </div>
+        </section>
+    </main>
+    <footer>
+
+    </footer>
+
+    <!-- js part -->
+    <script src="script.js"></script>
+</body>
+</html>
